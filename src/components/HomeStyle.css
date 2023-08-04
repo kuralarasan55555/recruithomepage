@@ -1,0 +1,175 @@
+/* Styles for the home-page */
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background: -webkit-linear-gradient(
+    110deg,
+    #a60af3 40%,
+    rgba(0, 0, 0, 0) 30%
+  ),
+  -webkit-radial-gradient(
+    farthest-corner at 0% 0%,
+    #7a00cc 70%,
+    #c03fff 70%
+  );
+background: -o-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%),
+  -o-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+background: -moz-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%),
+  -moz-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%),
+  radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%); */
+}
+
+/* Styles for the header */
+ header {
+  text-align: center;
+  color: #fff;
+}
+
+/* Styles for the job-listings */
+.job-listings {
+  display: grid;
+  padding-left: 10%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  border-collapse: collapse;
+  overflow-y: scroll;
+  max-height: 67vh;
+
+}
+
+/* Styles for the job-card */
+.job-card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body{
+  background: -webkit-linear-gradient(
+    110deg,
+    #a60af3 40%,
+    rgba(0, 0, 0, 0) 30%
+  ),
+  -webkit-radial-gradient(
+    farthest-corner at 0% 0%,
+    #7a00cc 70%,
+    #c03fff 70%
+  );
+background: -o-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%),
+  -o-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+background: -moz-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%),
+  -moz-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%),
+  radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+}
+/* Responsive styles */
+@media screen and (max-width: 767px) {
+   
+  .job-filter .form-group label {
+    width: 100%; /* Label takes full width */
+    margin-bottom: 5px;
+  }
+
+  .job-filter .form-group select {
+    width: 100%; /* Select takes full width */
+    margin-bottom: 10px;
+  }
+
+  /* Ensure initial option is fully visible */
+  .job-filter .form-group select option {
+    white-space: nowrap; /* Prevent option text from wrapping */
+    overflow: hidden; /* Hide any overflow */
+    text-overflow: clip; /* Show ellipsis for long option text */
+  }
+ 
+  .job-listings {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    
+  }
+  .job-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Styles for the job-filter */
+.job-filter-container{
+      padding-left: 20%;
+      padding-right: 20%;
+}
+
+.job-filter {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 100px;
+
+}
+
+
+.filter-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+
+.filter-symbol {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.job-filter label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.job-filter select {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.job-filter .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.job-filter .form-group label {
+  width: 100px;
+}
+
+.job-filter .form-group select {
+  flex: 1;
+}
+
+.job-filter .form-group button {
+  margin-left: 10px;
+}
+
+.job-filter button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+.footer button{
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #1178e7;
+  color: #fff;
+  cursor: pointer;
+  align-items: center;
+}
+
+
